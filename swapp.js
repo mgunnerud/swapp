@@ -20,7 +20,7 @@ function Mediator() {
 function DropdownList() {
 	var dropdownList = document.createElement('select');
 	dropdownList.addOption = function(optionValue, optionText) {
-		var op = document.createElement("option");
+		var op = document.createElement('option');
 		op.value = optionValue;
 		op.text = optionText;
 		dropdownList.options.add(op);

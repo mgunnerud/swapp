@@ -5,26 +5,26 @@ function ParticipantsView(mediator) {
 	me.professionSelector = new DropdownList();
 
 	// create day dropdown options:
-	me.professionSelector.addOption("DEV", "Developers");
-	me.professionSelector.addOption("DES", "Designers");
-	me.professionSelector.addOption("BIZ", "Business");
+	me.professionSelector.addOption('DEV', 'Developers');
+	me.professionSelector.addOption('DES', 'Designers');
+	me.professionSelector.addOption('BIZ', 'Business');
 
 	me.changeProfession = function() {
 		var me = this,
 			selectedProfession = me.professionSelector.value;
 			
-		if(selectedProfession === "DEV") {
-			me.textArea.innerHTML = "nerdy people";
+		if(selectedProfession === 'DEV') {
+			me.textArea.innerHTML = 'nerdy people';
 		}
-		else if(selectedProfession === "DES") {
-			me.textArea.innerHTML = "hip people";
+		else if(selectedProfession === 'DES') {
+			me.textArea.innerHTML = 'hip people';
 		}
-		else if(selectedProfession === "BIZ") {
-			me.textArea.innerHTML = "money-making people";
+		else if(selectedProfession === 'BIZ') {
+			me.textArea.innerHTML = 'money-making people';
 		}
 	}
 	
-	me.professionSelector.addEventListener("change", function() {
+	me.professionSelector.addEventListener('change', function() {
 		me.changeProfession();
 	});
 	
